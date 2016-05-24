@@ -12,5 +12,5 @@
     "wrapper"
   ],
   "license": "MIT",
-  "main": "_tipi.component.wrapper.scss"
+  "main": "_tipi.base.wrapper.scss"
 }
