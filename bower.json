@@ -1,0 +1,16 @@
+{
+  "name": "tipi.component.wrapper",
+  "homepage": "https://github.com/toolbarthomas/tipi.component.wrapper",
+  "authors": [
+    "Thomas van der Velde <contact@toolbarthomas.net>"
+  ],
+  "description": "Horizontally align your website like it's 1990",
+  "keywords": [
+    "toolbarthomas",
+    "modular",
+    "tipi",
+    "wrapper"
+  ],
+  "license": "MIT",
+  "main": "_tipi.component.wrapper.scss"
+}
