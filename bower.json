@@ -1,6 +1,6 @@
 {
-  "name": "tipi.component.wrapper",
-  "homepage": "https://github.com/toolbarthomas/tipi.component.wrapper",
+  "name": "tipi.base.wrapper",
+  "homepage": "https://github.com/toolbarthomas/tipi.base.wrapper",
   "authors": [
     "Thomas van der Velde <contact@toolbarthomas.net>"
   ],
