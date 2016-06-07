@@ -1,7 +1,0 @@
-@mixin construct_wrapper($min-width:false, $max-width: false) {
-	@include breakpoint($min-width, $max-width) {
-		.wrapper {
-			width: $min-width;
-		}
-	}
-}

@@ -1,3 +1,5 @@
+@import "mixins/adjust-wrapper-width";
+
 @mixin core_wrapper {
 	.wrapper {
 		margin: 0 auto;
@@ -8,12 +10,12 @@
 		@if $wrapper-fluid == true {
 			max-width: $wrapper-max-width;
 		} @else {
-			@include construct_wrapper($phablet-min-width, $phablet-max-width);
-			@include construct_wrapper($tablet-min-width, $tablet-max-width);
-			@include construct_wrapper($tablet-landscape-min-width, $tablet-landscape-max-width);
-			@include construct_wrapper($desktop-min-width, $desktop-max-width);
-			@include construct_wrapper($widescreen-min-width, $widescreen-max-width);
-			@include construct_wrapper($highroller-min-width);
+			@include adjust-wrapper-width($phablet-min-width, $phablet-max-width);
+			@include adjust-wrapper-width($tablet-min-width, $tablet-max-width);
+			@include adjust-wrapper-width($tablet-landscape-min-width, $tablet-landscape-max-width);
+			@include adjust-wrapper-width($desktop-min-width, $desktop-max-width);
+			@include adjust-wrapper-width($widescreen-min-width, $widescreen-max-width);
+			@include adjust-wrapper-width($highroller-min-width);
 		}
 	}
 }
