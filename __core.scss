@@ -1,9 +1,36 @@
 @mixin core_wrapper {
 	.wrapper {
 		margin: 0 auto;
-		padding: 0 $wrapper-gutter;
+		padding: $wrapper-gutter;
 		max-width: $wrapper-max-width;
+		@if $wrapper-fluid == true {
+			min-width: $wrapper-min-width;
+		} @else {
+			width: $wrapper-min-width;
+		}
+	}
 
-		@include clear(false, true);
+	@if $enable-wrapper-width-for-phablet != false {
+		@include wrapper-width($phablet-min-width, $phablet-min-width);
+	}
+
+	@if $enable-wrapper-width-for-tablet != false {
+		@include wrapper-width($tablet-min-width, $tablet-min-width);
+	}
+
+	@if $enable-wrapper-width-for-tablet-landscape != false {
+		@include wrapper-width($tablet-landscape-min-width, $tablet-landscape-min-width);
+	}
+
+	@if $enable-wrapper-width-for-desktop != false {
+		@include wrapper-width($desktop-min-width, $desktop-min-width);
+	}
+
+	@if $enable-wrapper-width-for-widescreen != false {
+		@include wrapper-width($widescreen-min-width, $widescreen-min-width);
+	}
+
+	@if $enable-wrapper-width-for-highroller != false {
+		@include wrapper-width($highroller-min-width, $highroller-min-width);
 	}
 }

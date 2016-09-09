@@ -1,3 +1,12 @@
-$wrapper-gutter: 20px !default;
 $wrapper-fluid: true !default;
+
+$wrapper-gutter: 0 20px !default;
+$wrapper-min-width: 320px !default;
 $wrapper-max-width: 960px !default;
+
+$enable-wrapper-width-for-phablet: true !default;
+$enable-wrapper-width-for-tablet: true !default;
+$enable-wrapper-width-for-tablet-landscape: true !default;
+$enable-wrapper-width-for-desktop: true !default;
+$enable-wrapper-width-for-widescreen: true !default;
+$enable-wrapper-width-for-highroller: true !default;
