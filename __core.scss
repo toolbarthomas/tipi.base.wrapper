@@ -3,7 +3,8 @@
 		margin: 0 auto;
 
 		@if $wrapper-gutter != false {
-			padding: $wrapper-gutter;
+			padding-left: $wrapper-gutter;
+			padding-right: $wrapper-gutter;
 		}
 
 		@if $wrapper-max-width != false {
